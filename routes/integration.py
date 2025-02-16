@@ -6,6 +6,7 @@ router = APIRouter()
 @router.get("/integration.json")
 def get_integration_json(request: Request):
     base_url = str(request.base_url).rstrip("/")
+    print(base_url)
     return {
         "data": {
             "date": {
